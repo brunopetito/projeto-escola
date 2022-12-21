@@ -30,25 +30,34 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
   };
   return (
     <Slider {...settings} className="flex justify-center items-center   ">
       <div>
-        <picture className="flex justify-center  ">
-          <img src="/foto1.jpg" alt="primeira foto do carousel" />
+        <picture className="flex justify-center h-96 max-h-96 ">
+          <img src="/Matriculas.jpg" alt="primeira foto do carousel" />
+        </picture>
+      </div>
+
+      <div>
+        <picture className="flex justify-center  h-96 max-h-96   ">
+          <img
+            className="w-full"
+            src="/books.jpg"
+            alt="foto da pintura da bandeira do brasil na rua"
+          />
         </picture>
       </div>
       <div>
-        <picture className="flex justify-center  ">
-          <img src="/Matriculas.jpg" alt="foto matrícula" />
-        </picture>
-      </div>
-      <div>
-        <picture className="flex justify-center  ">
-          <img src="/books.jpg" alt="foto duna" />
+        <picture className="flex justify-center h-96 max-h-96    ">
+          <img
+            className="w-full"
+            src="/teste1.jpg"
+            alt="foto de todos alunos da escola"
+          />
         </picture>
       </div>
     </Slider>

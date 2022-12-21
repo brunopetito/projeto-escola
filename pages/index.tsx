@@ -5,13 +5,13 @@ import Layout from '../components/Layout';
 
 export default function Home() {
   return (
-    <div className="text-3xl">
+    <div>
       <Layout>
-        <div className="w-full flex flex-col  ">
+        <div className="w-full flex flex-col h-fit  ">
           <Header></Header>
           <IndexContent />
+          <Footer />
         </div>
-        <Footer></Footer>
       </Layout>
     </div>
   );
