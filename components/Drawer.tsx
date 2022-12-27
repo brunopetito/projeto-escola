@@ -41,7 +41,7 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Início', 'Sobre', 'Equipe', 'Contato'].map((text, index) => (
+        {['Início', 'Postagens', 'Equipe', 'Contato'].map((text, index) => (
           <ListItem key={text} disablePadding>
             {/* Usei o normalize abaixo para ir direto para rota
             sem acentos... */}

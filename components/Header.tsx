@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import MenuMobile from './MenuMobile';
 
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import TemporaryDrawer from './Drawer';
 export default function Header() {
+  const router = useRouter();
   return (
-    <div className=" text-2xl w-full flex  justify-between py-2 px-3 items-center">
+    <div
+      className=" text-2xl w-full flex  justify-between py-2 px-3 items-center"
+      onClick={() => router.push('/')}
+    >
       <Image
         className=" w-[180px] h-auto"
         src={'/colorida.svg'}
