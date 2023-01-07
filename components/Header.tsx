@@ -11,7 +11,7 @@ export default function Header() {
       onClick={() => router.push('/')}
     >
       <Image
-        className=" w-[180px] h-auto"
+        className=" w-[180px] h-auto priority"
         src={'/colorida.svg'}
         width={180}
         height={80}
