@@ -45,27 +45,19 @@ export default function TemporaryDrawer() {
           <ListItem key={text} disablePadding>
             {/* Usei o normalize abaixo para ir direto para rota
             sem acentos... */}
-            {text === 'Início' ? (
-              <ListItemButton href="/">
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            ) : (
-              <ListItemButton
-                href={`${text
-                  .normalize('NFD')
-                  .replace(/[\u0300-\u036f]/g, '')
-                  .toLocaleLowerCase()}
+
+            <ListItemButton
+              href={`${text
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .toLocaleLowerCase()}
             `}
-              >
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            )}
+            >
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
           </ListItem>
         ))}
       </List>
