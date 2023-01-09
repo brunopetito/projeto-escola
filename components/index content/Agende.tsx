@@ -3,7 +3,7 @@ import Formulario from './Formulario';
 
 export default function Agende() {
   return (
-    <div className=" w-full flex flex-col  bg-contain justify-center  items-center mt-8">
+    <div className=" w-full flex flex-col  bg-contain justify-center  items-center ">
       <div>
         <div className="flex flex-col items-center justify-center">
           <span className="font-medium text-2xl">Conheça nossa Escola</span>

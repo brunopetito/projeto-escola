@@ -1,3 +1,4 @@
+import { request } from '../lib/datoCMS';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import IndexContent from '../components/index content/IndexContent';

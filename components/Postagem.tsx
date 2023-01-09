@@ -3,21 +3,27 @@ import React from 'react';
 interface PostagemProps {
   titulo: string;
   subtitulo: string;
-  imgUrl: string;
+  imgUrl?: string;
   linkTo?: string;
+  imgFixed?: string;
 }
 
 export default function Postagem({
   titulo,
   subtitulo,
   imgUrl,
-  linkTo
+  linkTo,
+  imgFixed
 }: PostagemProps) {
   return (
     <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow-md  ">
       <a href={linkTo ? linkTo : '#'}>
         <picture>
-          <img className="rounded-t-lg" src={`/${imgUrl}.jpg`} alt="" />
+          <img
+            className="rounded-t-lg"
+            src={imgFixed ? imgFixed : imgUrl}
+            alt=""
+          />
         </picture>
       </a>
       <div className="p-5">

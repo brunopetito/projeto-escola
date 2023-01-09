@@ -6,7 +6,7 @@ import TemporaryDrawer from './Drawer';
 export default function Header() {
   const router = useRouter();
   return (
-    <div className=" text-2xl w-full flex  justify-between py-2 px-3 items-center">
+    <div className=" text-2xl w-full flex  justify-between py-2 px-3 items-center border-b-2 border-[#F9F3EB]">
       <div onClick={() => router.push('/')} className="hover:cursor-pointer">
         <Image
           className=" w-[180px] h-auto priority"

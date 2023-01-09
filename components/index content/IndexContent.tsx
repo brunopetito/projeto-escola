@@ -3,6 +3,7 @@ import Footer from '../Footer';
 import Slider from '../Slider';
 import Agende from './Agende';
 import Postagens from './Postagens';
+import Relatos from './Relatos';
 
 export default function IndexContent() {
   return (
@@ -10,11 +11,14 @@ export default function IndexContent() {
       <div className="w-[100%]  max-h-fit ">
         <Slider />
       </div>
-      <div className="w-full  ">
+      <div className="w-full mt-8 ">
         <Agende />
       </div>
-      <div className="w-full">
+      <div className="w-full mt-8">
         <Postagens />
+      </div>
+      <div className="w-full mt-8">
+        <Relatos />
       </div>
     </div>
   );
