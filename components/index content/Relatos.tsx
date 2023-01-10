@@ -5,7 +5,7 @@ import styles from './relatos.module.css';
 export default function Relatos() {
   const [alturaY, setAlturaY] = useState<Boolean>(false);
   useScrollPosition(({ prevPos, currPos }) => {
-    if (currPos.y < -1700) {
+    if (currPos.y < -1650) {
       setAlturaY(true);
     }
   });
