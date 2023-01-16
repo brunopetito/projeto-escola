@@ -52,6 +52,7 @@ export default function Postagens({ data }: any) {
                 onClick={() => {
                   if (page > 1) {
                     setPage(+page - 1);
+                    window.scrollTo(0, 0);
                   }
                 }}
               >
@@ -75,6 +76,7 @@ export default function Postagens({ data }: any) {
                 onClick={() => {
                   if (page < data.allPostagems.length / 3) {
                     setPage(+page + 1);
+                    window.scrollTo(0, 0);
                   }
                 }}
               >
