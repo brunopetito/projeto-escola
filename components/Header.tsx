@@ -8,13 +8,15 @@ export default function Header() {
   return (
     <div className=" text-2xl w-full flex  justify-between py-2 px-3 items-center border-b-2 border-[#F9F3EB]">
       <div onClick={() => router.push('/')} className="hover:cursor-pointer">
-        <Image
-          className=" w-[180px] h-auto priority"
-          src={'/colorida.svg'}
-          width={180}
-          height={80}
-          alt={'logo da escola'}
-        ></Image>
+        <picture>
+          <img
+            className=" w-[180px] h-auto priority"
+            src={'/colorida.svg'}
+            width="180"
+            height="80"
+            alt={'logo da escola'}
+          ></img>
+        </picture>
       </div>
 
       <TemporaryDrawer />

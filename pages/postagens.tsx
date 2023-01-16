@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout from '../components/Layout';
-import Postagem from '../components/Postagem';
+import Postagem from '../components/index content/CardPostagem';
 import { request } from '../lib/datoCMS';
 
 export default function Postagens({ data }: any) {
