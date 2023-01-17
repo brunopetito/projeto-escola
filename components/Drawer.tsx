@@ -88,8 +88,8 @@ export default function TemporaryDrawer() {
       {(['left'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
           <Button
+            style={{ background: '#771d1D', color: '#F9B826' }}
             onClick={toggleDrawer(anchor, true)}
-            className="bg-red-900 text-yellow-400 border-rose-900 hover:bg-rose-900 hover:text-yellow-800  "
             variant="text"
           >
             <MenuIcon />
