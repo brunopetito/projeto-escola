@@ -1,5 +1,6 @@
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import { useState } from 'react';
+import Carousel from '../Carousel';
 import styles from './relatos.module.css';
 
 export default function Relatos() {
@@ -25,21 +26,22 @@ export default function Relatos() {
             alturaY && styles.animation
           } px-10 flex flex-col justify-center items-center`}
         >
-          <picture className={!alturaY ? '-z-20' : 'z-10'}>
-            <img src="/relato.jpg" alt="" className="h-40 rounded-full" />
-          </picture>
-
-          <p
-            className={`text-[#fefef2] text-sm mt-4 ${
-              !alturaY ? '-z-20' : 'z-10'
-            }`}
-          >
-            A melhor, escola do mundo ,porque além da educação eles têm amor
-            ,TODOS são sensacionais! Só tenho uma reclamação a fazer , acho um
-            absurdo só ter o ensino fundamental 😭 não sei o que vou fazer no
-            ensino médio ! Já estou chorando, e me preparando
-            psicologicamente.Sou uma petiteira Apaixonada.
-          </p>
+          <div className="w-full">
+            <Carousel
+              data={[
+                [
+                  'relato.jpg',
+                  'A melhor, escola do mundo ,porque além da educação eles têm amor ,TODOS são sensacionais! Só tenho uma reclamação a fazer , acho um absurdo só ter o ensino fundamental 😭 não sei o que vou fazer no ensino médio ! Já estou chorando, e me preparando psicologicamente.Sou uma petiteira Apaixonada.',
+                  'Mãe do Davi e do Samuel'
+                ],
+                [
+                  'relato2.jpg',
+                  'Ótima professores ,ensino de qualidade , ambiente legal ,em fim amo essa escola minha filha mais velha estou lá ,agora a mais nova tbm 😍.',
+                  'Mãe da Maria Clara e da Maria Eduarda'
+                ]
+              ]}
+            />
+          </div>
         </div>
       </div>
     </div>
