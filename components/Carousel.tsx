@@ -26,7 +26,9 @@ export default function Carousel({ data }: CarouselProps) {
         >
           <picture className="flex flex-col items-center ">
             <img src={item[0]} alt="" className="h-40 w-40 rounded-full" />
-            <span className="mb-2 font-bold text-[#F9B826]">{item[2]}</span>
+            <span className="mb-2 font-bold px-4 text-[#F9B826]">
+              {item[2]}
+            </span>
           </picture>
           <p className="px-4 text-white">{item[1]}</p>
         </div>
