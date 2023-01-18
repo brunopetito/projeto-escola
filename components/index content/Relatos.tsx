@@ -36,7 +36,7 @@ export default function Relatos() {
                 ],
                 [
                   'relato2.jpg',
-                  'Ótima professores ,ensino de qualidade , ambiente legal ,em fim amo essa escola minha filha mais velha estou lá ,agora a mais nova tbm 😍.',
+                  'Ótimos professores ,ensino de qualidade , ambiente legal ,em fim amo essa escola minha filha mais velha estou lá ,agora a mais nova tbm 😍.',
                   'Mãe da Maria Clara e da Maria Eduarda'
                 ]
               ]}
